@@ -1,5 +1,5 @@
 package com.nubari;
 
 public interface Observer {
-    public void update(String test);
+    public void update(Number searchValue);
 }

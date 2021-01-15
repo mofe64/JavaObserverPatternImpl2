@@ -7,7 +7,7 @@ import java.util.List;
 public class DataSource {
     private static final SecureRandom secureRandom = new SecureRandom();
 
-    private static final List<Number> mockDataSource = new ArrayList<>();
+    private static final List<Integer> mockDataSource = new ArrayList<>();
 
     public static void populateMockDataSource(int count, int maxValue, int line) {
         for (int i = 0; i < count; i++) {
@@ -15,7 +15,7 @@ public class DataSource {
         }
     }
 
-    public static List<Number> getMockDataSource() {
+    public static List<Integer> getMockDataSource() {
         return mockDataSource;
     }
 }

@@ -5,5 +5,5 @@ public interface Subject {
 
     public void removeObserver(Observer observer);
 
-    public void notifyObservers(Number number);
+    public void notifyObservers(Integer number);
 }

@@ -10,8 +10,8 @@ public class Main {
         List<Integer> dataSource2 = DataSource.getMockDataSource();
         DataSource.populateMockDataSource(1_000, 100, 4);
         List<Integer> dataSource3 = DataSource.getMockDataSource();
-        dataSource3.add(3);
-        Integer searchQuery = 3;
+        dataSource3.add(73819101);
+        Integer searchQuery = 73819101;
         SearchObject searchObject1 = new SearchObject();
         SearchObject searchObject2 = new SearchObject();
         SearchObject searchObject3 = new SearchObject();
@@ -24,6 +24,5 @@ public class Main {
         searchManager.initiateSearch(dataSource1, searchQuery);
         searchManager.initiateSearch(dataSource2, searchQuery);
         searchManager.initiateSearch(dataSource3, searchQuery);
-
     }
 }

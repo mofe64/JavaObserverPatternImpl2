@@ -64,12 +64,12 @@ public class SearchObject implements Subject {
         this.searchQuery = searchQuery;
         busy = true;
         System.out.println("Search Object " + getSearchObjectName() + " pinged");
+        System.out.println("Search Object " + getSearchObjectName() + " can carry out operations : " + canCarryOutOperation);
         while (canCarryOutOperation) {
             boolean valueFound = false;
 //            for (Number value : source) {
-//
 //                System.out.println("current value is " + value.toString() + " from " + this.getSearchObjectName());
-//          g      System.out.println();
+//                System.out.println();
 //                System.out.println("Search Object " + this + " Carrying out search");
 //                System.out.println();
 //                if (value.equals(searchQuery)) {
@@ -83,7 +83,7 @@ public class SearchObject implements Subject {
 //                    System.out.println();
 //                }
 //            }
-
+//
             Collections.sort(source);
             int high = source.size() - 1;
             int low = 0;
